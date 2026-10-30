@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "providers": {
+    "deepseek": {
+      "apiKey": "<示例占位符，真实配置请用 scripts/api-key.ps1 add deepseek 生成>",
+      "baseURL": "https://api.deepseek.com",
+      "models": [
+        "deepseek-chat",
+        "deepseek-reasoner"
+      ]
+    }
+  }
+}

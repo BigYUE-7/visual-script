@@ -1,0 +1,5 @@
+# 本地机密：大模型 API 密钥配置文件（禁止提交）
+config/llm-api.json
+
+# 本地 TTS 配置（含业务空间 endpoint / voice id，按机器而变，不提交）
+config/tts.json

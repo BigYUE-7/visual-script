@@ -1,0 +1,8 @@
+{
+  "provider": "dashscope",
+  "wsEndpoint": "wss://ws-你的业务空间ID.cn-beijing.maas.aliyuncs.com/api-ws/v1/inference",
+  "model": "cosyvoice-v3.5-flash",
+  "voice": "你的克隆音色id（vsspike...）",
+  "format": "mp3",
+  "sampleRate": 22050
+}

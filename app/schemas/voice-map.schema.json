@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://visual-script.dev/schemas/voice-map.schema.json",
+  "title": "VoiceMap",
+  "description": "语音资产：导演稿 → 分段 TTS 的产物，含实测时长与字级对齐。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "provider", "segments"],
+  "properties": {
+    "version": { "const": 1 },
+    "provider": { "type": "string", "minLength": 1 },
+    "segments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["narrationId", "textHash", "audioFile", "durationMs"],
+        "properties": {
+          "narrationId": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+          "textHash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+          "audioFile": { "type": "string", "minLength": 1 },
+          "durationMs": { "type": "number", "exclusiveMinimum": 0 },
+          "alignment": {
+            "type": "array",
+            "default": [],
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["text", "startMs", "endMs"],
+              "properties": {
+                "text": { "type": "string", "minLength": 1 },
+                "startMs": { "type": "number", "minimum": 0 },
+                "endMs": { "type": "number", "minimum": 0 }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://visual-script.dev/schemas/material-script.schema.json",
+  "title": "MaterialScript",
+  "description": "素材合成稿：由导演稿推导出的资产生产任务清单。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "items"],
+  "properties": {
+    "version": { "const": 1 },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["asset", "usedBy", "source", "description", "status"],
+        "properties": {
+          "asset": { "type": "string", "minLength": 1 },
+          "usedBy": {
+            "type": "array",
+            "items": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" }
+          },
+          "source": { "type": "string", "enum": ["builtin", "library", "variant", "compose", "ai"] },
+          "description": { "type": "string", "minLength": 1 },
+          "anchors": {
+            "type": "object",
+            "patternProperties": {
+              "^[a-z][a-z0-9_]*$": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["x", "y"],
+                "properties": {
+                  "x": { "type": "number", "minimum": 0, "maximum": 1 },
+                  "y": { "type": "number", "minimum": 0, "maximum": 1 }
+                }
+              }
+            },
+            "additionalProperties": false
+          },
+          "status": { "type": "string", "enum": ["pending", "ready", "failed"], "default": "pending" }
+        }
+      }
+    }
+  }
+}

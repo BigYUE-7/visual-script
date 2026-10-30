@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "mito",
+      "name": "线粒体剖面",
+      "description": "细胞的能量工厂，扁平剖面示意图，适合表达供能、代谢与能量转化的概念",
+      "collection": "生物细胞",
+      "tags": [
+        "生物",
+        "细胞",
+        "线粒体",
+        "科普"
+      ],
+      "file": "library/svg/mito.svg",
+      "thumbnail": "library/thumbs/mito.png",
+      "viewBox": {
+        "width": 200,
+        "height": 200
+      },
+      "defaultWidth": 360,
+      "source": "ai",
+      "createdAt": "2026-10-09T00:50:04.906Z",
+      "generator": {
+        "provider": "deepseek",
+        "prompt": "线粒体剖面扁平示意图，科普风格，适合表达细胞的能量工厂"
+      }
+    },
+    {
+      "id": "ai-mv09894i",
+      "name": "齿轮图标",
+      "description": "扁平风格齿轮图标，适合表达机制运转、系统协作与流程驱动等概念",
+      "collection": "科技图标",
+      "tags": [
+        "图标",
+        "齿轮",
+        "机制",
+        "扁平"
+      ],
+      "file": "library/svg/ai-mv09894i.svg",
+      "thumbnail": "library/thumbs/ai-mv09894i.png",
+      "viewBox": {
+        "width": 200,
+        "height": 200
+      },
+      "defaultWidth": 220,
+      "source": "ai",
+      "createdAt": "2026-10-09T00:56:04.147Z",
+      "generator": {
+        "provider": "deepseek",
+        "prompt": "齿轮图标，扁平风格，适合表达机制与运转"
+      }
+    },
+    {
+      "id": "ai-mv0akhti",
+      "name": "红花",
+      "description": "一朵带茎叶的红色六瓣花，适合表达生机、春天、美好或感谢等概念",
+      "collection": "自然植物",
+      "tags": [
+        "植物",
+        "花朵",
+        "自然",
+        "图标"
+      ],
+      "file": "library/svg/ai-mv0akhti.svg",
+      "thumbnail": "library/thumbs/ai-mv0akhti.png",
+      "viewBox": {
+        "width": 200,
+        "height": 200
+      },
+      "defaultWidth": 360,
+      "source": "ai",
+      "createdAt": "2026-10-09T01:33:34.906Z",
+      "generator": {
+        "provider": "deepseek",
+        "prompt": "一朵花"
+      }
+    }
+  ]
+}

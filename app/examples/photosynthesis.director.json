@@ -1,0 +1,494 @@
+{
+  "version": 1,
+  "meta": {
+    "title": "植物是怎么吃饭的",
+    "audience": "小学高年级",
+    "style": "轻松科普",
+    "fps": 30,
+    "aspect": "16:9"
+  },
+  "narrations": [
+    {
+      "id": "n01",
+      "text": "植物也要吃饭。它们不吃米饭，而是自己[[开小灶]]，这个本事叫[[光合作用]]。",
+      "gapAfterMs": 300,
+      "minHoldMs": 0
+    },
+    {
+      "id": "n02",
+      "text": "秘密就藏在叶片里：[[叶绿体]]像一间间[[小厨房]]，专门负责抓光。",
+      "gapAfterMs": 350,
+      "minHoldMs": 600
+    },
+    {
+      "id": "n03",
+      "text": "它抓住阳光，把[[二氧化碳]]和[[水]]，做成甜甜的[[葡萄糖]]。",
+      "gapAfterMs": 350,
+      "minHoldMs": 500
+    },
+    {
+      "id": "n04",
+      "text": "顺手，[[氧气]]被放了出来，飘到[[空气]]里。",
+      "gapAfterMs": 300,
+      "minHoldMs": 0
+    },
+    {
+      "id": "n05",
+      "text": "[[我们]]呼吸的氧气，其实是它们送的[[礼物]]。",
+      "gapAfterMs": 350,
+      "minHoldMs": 600
+    },
+    {
+      "id": "n06",
+      "text": "而我们呼出的[[二氧化碳]]，又飘回叶片，成了它们的[[原料]]。",
+      "gapAfterMs": 350,
+      "minHoldMs": 500
+    },
+    {
+      "id": "n07",
+      "text": "所以植物和我们，是[[互相帮助]]的[[老搭档]]。",
+      "gapAfterMs": 200,
+      "minHoldMs": 800
+    }
+  ],
+  "elements": [
+    {
+      "id": "deco",
+      "kind": "shape",
+      "layer": 0,
+      "shape": "circle",
+      "color": "wash",
+      "width": 720,
+      "height": 720,
+      "slot": "top"
+    },
+    {
+      "id": "plant",
+      "kind": "emoji",
+      "layer": 1,
+      "emoji": "seedling",
+      "slot": "left"
+    },
+    {
+      "id": "kw",
+      "kind": "text",
+      "layer": 2,
+      "preset": "keyword",
+      "content": { "type": "literal", "text": "光合作用" },
+      "align": "center",
+      "slot": "center"
+    },
+    {
+      "id": "note1",
+      "kind": "text",
+      "layer": 3,
+      "preset": "caption",
+      "content": { "type": "literal", "text": "不吃米饭" },
+      "align": "center",
+      "slot": "top"
+    },
+    {
+      "id": "leaf",
+      "kind": "shape",
+      "layer": 1,
+      "shape": "rect",
+      "color": "primary",
+      "width": 440,
+      "height": 300,
+      "slot": "right"
+    },
+    {
+      "id": "lab-chl",
+      "kind": "text",
+      "layer": 3,
+      "preset": "caption",
+      "content": { "type": "narration", "narrationId": "n02", "anchor": "叶绿体" },
+      "align": "center",
+      "slot": "top"
+    },
+    {
+      "id": "sun",
+      "kind": "emoji",
+      "layer": 1,
+      "emoji": "sun",
+      "slot": "top_right"
+    },
+    {
+      "id": "lab-co2",
+      "kind": "text",
+      "layer": 3,
+      "preset": "caption",
+      "content": { "type": "narration", "narrationId": "n03", "anchor": "二氧化碳" },
+      "align": "center",
+      "slot": "left"
+    },
+    {
+      "id": "lab-h2o",
+      "kind": "text",
+      "layer": 3,
+      "preset": "caption",
+      "content": { "type": "narration", "narrationId": "n03", "anchor": "水" },
+      "align": "center",
+      "slot": "bottom_left"
+    },
+    {
+      "id": "lab-glu",
+      "kind": "text",
+      "layer": 3,
+      "preset": "caption",
+      "content": { "type": "narration", "narrationId": "n03", "anchor": "葡萄糖" },
+      "align": "center",
+      "slot": "top_left"
+    },
+    {
+      "id": "lab-o2",
+      "kind": "text",
+      "layer": 3,
+      "preset": "caption",
+      "content": { "type": "narration", "narrationId": "n04", "anchor": "氧气" },
+      "align": "center",
+      "slot": "bottom_right"
+    },
+    {
+      "id": "sparkles",
+      "kind": "emoji",
+      "layer": 1,
+      "emoji": "sparkles",
+      "slot": "top_right"
+    },
+    {
+      "id": "lab-women",
+      "kind": "text",
+      "layer": 3,
+      "preset": "caption",
+      "content": { "type": "narration", "narrationId": "n05", "anchor": "我们" },
+      "align": "center",
+      "slot": "left"
+    },
+    {
+      "id": "heart",
+      "kind": "emoji",
+      "layer": 1,
+      "emoji": "heart",
+      "slot": "center"
+    },
+    {
+      "id": "lab-co2b",
+      "kind": "text",
+      "layer": 3,
+      "preset": "caption",
+      "content": { "type": "narration", "narrationId": "n06", "anchor": "二氧化碳" },
+      "align": "center",
+      "slot": "top_left"
+    },
+    {
+      "id": "lab-mat",
+      "kind": "text",
+      "layer": 3,
+      "preset": "caption",
+      "content": { "type": "narration", "narrationId": "n06", "anchor": "原料" },
+      "align": "center",
+      "slot": "bottom_left"
+    },
+    {
+      "id": "kw2",
+      "kind": "text",
+      "layer": 2,
+      "preset": "keyword",
+      "content": { "type": "literal", "text": "互相帮助" },
+      "align": "center",
+      "slot": "center"
+    },
+    {
+      "id": "note2",
+      "kind": "text",
+      "layer": 3,
+      "preset": "caption",
+      "content": { "type": "literal", "text": "植物和我们" },
+      "align": "center",
+      "slot": "bottom"
+    }
+  ],
+  "cues": [
+    {
+      "id": "c01",
+      "on": { "narrationId": "n01", "anchor": "光合作用" },
+      "action": { "type": "appear", "element": "deco", "at": "start", "preset": "fade" },
+      "durationMs": 600
+    },
+    {
+      "id": "c02",
+      "on": { "narrationId": "n01", "anchor": "开小灶" },
+      "action": { "type": "appear", "element": "plant", "preset": "pop" },
+      "durationMs": 500
+    },
+    {
+      "id": "c03",
+      "on": { "narrationId": "n01", "anchor": "光合作用" },
+      "action": { "type": "appear", "element": "kw", "at": "start", "preset": "slide_up" },
+      "durationMs": 600
+    },
+    {
+      "id": "c04",
+      "on": { "narrationId": "n01", "anchor": "开小灶" },
+      "action": { "type": "appear", "element": "note1", "preset": "fade" },
+      "durationMs": 500
+    },
+    {
+      "id": "c05",
+      "on": { "narrationId": "n01", "anchor": "光合作用" },
+      "action": { "type": "emphasize", "element": "kw", "scale": 1.3 },
+      "durationMs": 900
+    },
+    {
+      "id": "c06",
+      "on": { "narrationId": "n02", "anchor": "叶绿体" },
+      "action": { "type": "disappear", "element": "note1" },
+      "durationMs": 400
+    },
+    {
+      "id": "c07",
+      "on": { "narrationId": "n02", "anchor": "叶绿体" },
+      "action": { "type": "disappear", "element": "kw" },
+      "durationMs": 400
+    },
+    {
+      "id": "c08",
+      "on": { "narrationId": "n02", "anchor": "叶绿体" },
+      "action": { "type": "appear", "element": "leaf", "preset": "pop" },
+      "durationMs": 600
+    },
+    {
+      "id": "c09",
+      "on": { "narrationId": "n02", "anchor": "叶绿体" },
+      "action": { "type": "appear", "element": "lab-chl", "preset": "fade" },
+      "durationMs": 500
+    },
+    {
+      "id": "c10",
+      "on": { "narrationId": "n02", "anchor": "小厨房" },
+      "action": { "type": "emphasize", "element": "leaf", "scale": 1.15 },
+      "durationMs": 800
+    },
+    {
+      "id": "c11",
+      "on": { "narrationId": "n02", "anchor": "小厨房" },
+      "action": { "type": "move", "element": "plant", "to": "leaf.left", "offsetX": -130 },
+      "durationMs": 1200
+    },
+    {
+      "id": "c12",
+      "on": { "narrationId": "n03", "anchor": "二氧化碳" },
+      "action": { "type": "disappear", "element": "lab-chl" },
+      "durationMs": 400
+    },
+    {
+      "id": "c13",
+      "on": { "narrationId": "n03", "anchor": "二氧化碳" },
+      "action": { "type": "appear", "element": "sun", "preset": "pop" },
+      "durationMs": 500
+    },
+    {
+      "id": "c14",
+      "on": { "narrationId": "n03", "anchor": "二氧化碳" },
+      "action": { "type": "appear", "element": "lab-co2", "preset": "fade" },
+      "durationMs": 500
+    },
+    {
+      "id": "c15",
+      "on": { "narrationId": "n03", "anchor": "水" },
+      "action": { "type": "appear", "element": "lab-h2o", "preset": "fade" },
+      "durationMs": 500
+    },
+    {
+      "id": "c16",
+      "on": { "narrationId": "n03", "anchor": "水" },
+      "action": {
+        "type": "move",
+        "element": "sun",
+        "to": "leaf.top",
+        "offsetY": -120
+      },
+      "durationMs": 1200
+    },
+    {
+      "id": "c17",
+      "on": { "narrationId": "n03", "anchor": "水" },
+      "action": { "type": "animate", "element": "sun", "preset": "float" },
+      "durationMs": 2400
+    },
+    {
+      "id": "c18",
+      "on": { "narrationId": "n03", "anchor": "葡萄糖" },
+      "action": { "type": "disappear", "element": "lab-co2" },
+      "durationMs": 400
+    },
+    {
+      "id": "c19",
+      "on": { "narrationId": "n03", "anchor": "葡萄糖" },
+      "action": { "type": "disappear", "element": "lab-h2o" },
+      "durationMs": 400
+    },
+    {
+      "id": "c20",
+      "on": { "narrationId": "n03", "anchor": "葡萄糖" },
+      "action": { "type": "appear", "element": "lab-glu", "preset": "fade" },
+      "durationMs": 500
+    },
+    {
+      "id": "c21",
+      "on": { "narrationId": "n03", "anchor": "葡萄糖" },
+      "action": { "type": "emphasize", "element": "leaf", "scale": 1.2 },
+      "durationMs": 900
+    },
+    {
+      "id": "c22",
+      "on": { "narrationId": "n04", "anchor": "氧气" },
+      "action": { "type": "disappear", "element": "lab-glu" },
+      "durationMs": 400
+    },
+    {
+      "id": "c23",
+      "on": { "narrationId": "n04", "anchor": "氧气" },
+      "action": { "type": "disappear", "element": "sun" },
+      "durationMs": 400
+    },
+    {
+      "id": "c24",
+      "on": { "narrationId": "n04", "anchor": "氧气" },
+      "action": { "type": "appear", "element": "lab-o2", "preset": "pop" },
+      "durationMs": 500
+    },
+    {
+      "id": "c25",
+      "on": { "narrationId": "n04", "anchor": "氧气" },
+      "action": { "type": "appear", "element": "sparkles", "preset": "pop" },
+      "durationMs": 500
+    },
+    {
+      "id": "c26",
+      "on": { "narrationId": "n04", "anchor": "空气" },
+      "action": { "type": "move", "element": "lab-o2", "to": "sparkles.center" },
+      "durationMs": 900
+    },
+    {
+      "id": "c27",
+      "on": { "narrationId": "n04", "anchor": "空气" },
+      "action": { "type": "animate", "element": "sparkles", "preset": "float" },
+      "durationMs": 2400
+    },
+    {
+      "id": "c28",
+      "on": { "narrationId": "n05", "anchor": "我们" },
+      "action": { "type": "disappear", "element": "sparkles" },
+      "durationMs": 400
+    },
+    {
+      "id": "c29",
+      "on": { "narrationId": "n05", "anchor": "我们" },
+      "action": { "type": "appear", "element": "lab-women", "preset": "fade" },
+      "durationMs": 500
+    },
+    {
+      "id": "c30",
+      "on": { "narrationId": "n05", "anchor": "礼物" },
+      "action": { "type": "appear", "element": "heart", "preset": "pop" },
+      "durationMs": 600
+    },
+    {
+      "id": "c31",
+      "on": { "narrationId": "n05", "anchor": "礼物" },
+      "action": { "type": "emphasize", "element": "heart", "scale": 1.3 },
+      "durationMs": 900
+    },
+    {
+      "id": "c32",
+      "on": { "narrationId": "n05", "anchor": "礼物" },
+      "action": { "type": "animate", "element": "heart", "preset": "bounce" },
+      "durationMs": 1500
+    },
+    {
+      "id": "c33",
+      "on": { "narrationId": "n06", "anchor": "二氧化碳" },
+      "action": { "type": "disappear", "element": "lab-o2" },
+      "durationMs": 400
+    },
+    {
+      "id": "c34",
+      "on": { "narrationId": "n06", "anchor": "二氧化碳" },
+      "action": { "type": "disappear", "element": "lab-women" },
+      "durationMs": 400
+    },
+    {
+      "id": "c35",
+      "on": { "narrationId": "n06", "anchor": "二氧化碳" },
+      "action": { "type": "appear", "element": "lab-co2b", "preset": "fade" },
+      "durationMs": 500
+    },
+    {
+      "id": "c36",
+      "on": { "narrationId": "n06", "anchor": "原料" },
+      "action": { "type": "appear", "element": "lab-mat", "preset": "fade" },
+      "durationMs": 500
+    },
+    {
+      "id": "c37",
+      "on": { "narrationId": "n06", "anchor": "原料" },
+      "action": {
+        "type": "move",
+        "element": "lab-co2b",
+        "to": "leaf.bottom",
+        "offsetY": 60
+      },
+      "durationMs": 1200
+    },
+    {
+      "id": "c38",
+      "on": { "narrationId": "n06", "anchor": "原料" },
+      "action": { "type": "animate", "element": "leaf", "preset": "wiggle" },
+      "durationMs": 1600
+    },
+    {
+      "id": "c39",
+      "on": { "narrationId": "n06", "anchor": "原料" },
+      "action": { "type": "disappear", "element": "heart", "preset": "shrink" },
+      "durationMs": 400
+    },
+    {
+      "id": "c40",
+      "on": { "narrationId": "n07", "anchor": "互相帮助" },
+      "action": { "type": "disappear", "element": "lab-co2b" },
+      "durationMs": 400
+    },
+    {
+      "id": "c41",
+      "on": { "narrationId": "n07", "anchor": "互相帮助" },
+      "action": { "type": "disappear", "element": "lab-mat" },
+      "durationMs": 400
+    },
+    {
+      "id": "c42",
+      "on": { "narrationId": "n07", "anchor": "互相帮助" },
+      "action": { "type": "appear", "element": "kw2", "preset": "zoom" },
+      "durationMs": 600
+    },
+    {
+      "id": "c43",
+      "on": { "narrationId": "n07", "anchor": "老搭档" },
+      "action": { "type": "appear", "element": "note2", "preset": "fade" },
+      "durationMs": 500
+    },
+    {
+      "id": "c44",
+      "on": { "narrationId": "n07", "anchor": "老搭档" },
+      "action": { "type": "emphasize", "element": "kw2", "scale": 1.35 },
+      "durationMs": 900
+    },
+    {
+      "id": "c45",
+      "on": { "narrationId": "n07", "anchor": "老搭档" },
+      "action": { "type": "animate", "element": "kw2", "preset": "bounce" },
+      "durationMs": 1500
+    }
+  ]
+}

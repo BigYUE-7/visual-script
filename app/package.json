@@ -1,0 +1,52 @@
+{
+  "name": "visual-script",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Visual Script —— LLM 驱动的结构化 2D 动画引擎（P0 最小闭环）",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "studio": "remotion studio src/remotion/index.ts",
+    "editor": "vite editor",
+    "fetch-fonts": "node scripts/fetch-fonts.mjs",
+    "fetch-emoji": "node scripts/fetch-twemoji.mjs",
+    "director": "tsx src/cli/generate-director.ts",
+    "generate-asset": "tsx src/cli/generate-asset.ts",
+    "voice": "tsx src/cli/generate-voice.ts",
+    "tts:test": "tsx src/cli/tts-test.ts",
+    "tts:voices": "tsx src/cli/tts-voices.ts",
+    "compile": "tsx src/cli/compile.ts",
+    "render": "tsx src/cli/render.ts",
+    "pipeline": "tsx src/cli/pipeline.ts"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.533",
+    "@remotion/fonts": "4.0.533",
+    "@remotion/renderer": "4.0.533",
+    "@remotion/shapes": "^4.0.533",
+    "fontkit": "^2.0.4",
+    "music-metadata": "^12.0.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.533",
+    "ws": "^8.22.0",
+    "zod": "^4.6.5",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "@types/fontkit": "^2.0.9",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/ws": "^8.18.2",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.4",
+    "vitest": "^5.0.3"
+  }
+}

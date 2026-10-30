@@ -1,0 +1,12 @@
+# 依赖
+node_modules/
+
+# 渲染输出
+out/
+
+# 运行时工作区（导演稿 / 音频 / IR / 样片输出）
+public/workspaces/
+
+# 临时文件
+tmp/
+*.log

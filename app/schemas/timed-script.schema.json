@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://visual-script.dev/schemas/timed-script.schema.json",
+  "title": "TimedScript",
+  "description": "时间脚本：由 DirectorScript + VoiceMap 链式推导出的绝对毫秒时间线。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "fps", "sourceHash", "blocks", "totalMs"],
+  "properties": {
+    "version": { "const": 1 },
+    "fps": { "type": "integer", "minimum": 1, "default": 30 },
+    "sourceHash": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["director", "voiceMap"],
+      "properties": {
+        "director": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+        "voiceMap": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" }
+      }
+    },
+    "blocks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["narrationId", "startMs", "endMs", "audio", "cues"],
+        "properties": {
+          "narrationId": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+          "startMs": { "type": "number", "minimum": 0 },
+          "endMs": { "type": "number", "minimum": 0 },
+          "audio": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["file", "startMs", "endMs"],
+            "properties": {
+              "file": { "type": "string", "minLength": 1 },
+              "startMs": { "type": "number", "minimum": 0 },
+              "endMs": { "type": "number", "minimum": 0 }
+            }
+          },
+          "cues": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["id", "atMs", "durationMs"],
+              "properties": {
+                "id": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+                "atMs": { "type": "number", "minimum": 0 },
+                "durationMs": { "type": "number", "exclusiveMinimum": 0 }
+              }
+            }
+          }
+        }
+      }
+    },
+    "totalMs": { "type": "number", "minimum": 0 }
+  }
+}

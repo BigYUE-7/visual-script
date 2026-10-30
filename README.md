@@ -74,17 +74,3 @@ npm run render   -- --workspace sky
 | `app/editor/` | Vite + React 编辑器（画布 / 轨道 / 关键帧 / 属性面板 / 时间轴） |
 | `app/schemas/` | 手写 JSON Schema，直接作为模型 response_format |
 | `app/public/library/` | 素材库（AI 生成 + 复用，`index.json` 为唯一事实源） |
-
-## 证据与合规
-
-- 使用与修改方式、第三方依赖版本与许可、AI 使用披露、原创与授权边界，见 [授权说明.md](授权说明.md)。
-- 内置字体 Noto Sans SC（SIL OFL 1.1）、Twemoji（CC-BY 4.0）随包分发并保留其署名文件。
-- Remotion 为专属许可（非 MIT），本项目仅通过 npm 依赖调用其公开 API，不复制、不修改、不再分发其源码。
-
-## 许可
-
-本项目自研代码的开源许可证**尚待定稿**，在此之前不视为已授予分发许可；如需引用请先联系作者。
-
-## 联系
-
-参赛编号：AIC-2026-20142166
